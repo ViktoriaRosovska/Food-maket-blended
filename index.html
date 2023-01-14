@@ -15,57 +15,82 @@
   </head>
   <body>
     <heder>
-      <a href=""><img src="./img/Vector.png" alt="logo" width="66" height="52" /></a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button">Order Now</button>
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href=""><img src="./img/logo.png" alt="logo" width="66" height="52" /></a>
+          <div class="menu">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="link current" href="">Home</a></li>
+              <li class="nav-item"><a class="link" href="">About</a></li>
+              <li class="nav-item"><a class="link" href="">Service</a></li>
+              <li class="nav-item"><a class="link" href="">Menu</a></li>
+              <li class="nav-item"><a class="link" href="">Contact</a></li>
+            </ul>
+            <button class="btn" type="button">Order Now</button>
+          </div>
+        </nav>
+      </div>
     </heder>
+
     <main>
       <!-- Hero -->
-      <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-          Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        </p>
-        <button>Order Now</button>
-        <img src="./img/foto1.png" alt="foto1" width="528" height="528" />
-      </section>
-      <!-- Offerinngs -->
-      <section>
-        <h2>What’s Special About Our Offerings</h2>
-        <ul>
-          <li>
-            <h3>Fasest Delivery</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-          </li>
-          <li>
-            <h3>Easy To Order</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-          </li>
-        </ul>
-        <button type="button">Order Now</button>
-      </section>
+      <div class="container">
+        <section class="hero">
+          <div class="hero-block">
+            <h1 class="hero-title">Enjoy Your Favorite<br />Food From Anywhere</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+              erat.
+            </p>
+            <button class="btn" type="button">Order Now</button>
+          </div>
+
+          <div class="slaider">
+            <!-- <img class="img1" src="./img/Subtract.png" alt="Outline falafel" width="580" height="580" /> -->
+            <img class="img" src="./img/falafel.png" alt="Falafel" width="528" height="528" />
+          </div>
+        </section>
+      </div>
+
+      <!-- Offerings -->
+      <div class="container">
+        <section class="offerings">
+          <img src="./img/aple.png" alt="Apple" width="550" height="604" />
+          <div class="offerings-content">
+            <h2 class="title">What’s Special About Our Offerings</h2>
+            <ul class="offerings-list">
+              <li class="list">
+                <h3 class="sub-title">Fasest Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+              <li class="list">
+                <h3 class="sub-title">Easy To Order</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+            </ul>
+            <button class="btn" type="button">Order Now</button>
+          </div>
+        </section>
+      </div>
+
       <!-- Favoriets -->
-      <section>
-        <h2>Some of Our Favorites</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <ul>
-          <li><img src="./img/gamburger.png" alt="Gamburger" width="395" height="397" /></li>
-          <li><img src="./img/Pasta.png" alt="Pasta" width="394" height="397" /></li>
-          <li><img src="./img/pizza.png" alt="Pizza" width="395" height="397" /></li>
-          <li><img src="./img/chicken.png" alt="Chicken" width="395" height="397" /></li>
-          <li><img src="./img/salat.png" alt="Salat" width="394" height="397" /></li>
-          <li><img src="./img/borshch.png" alt="Borshch" width="395" height="397" /></li>
-        </ul>
-      </section>
+      <div class="container">
+        <section>
+          <h2 class="title">Some of Our Favorites</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <ul class="food-favorites">
+            <li class="list"><img src="./img/gamburger.png" alt="Gamburger" width="395" height="397" /></li>
+            <li class="list"><img src="./img/Pasta.png" alt="Pasta" width="394" height="397" /></li>
+            <li class="list"><img src="./img/pizza.png" alt="Pizza" width="395" height="397" /></li>
+            <li class="list"><img src="./img/chicken.png" alt="Chicken" width="395" height="397" /></li>
+            <li class="list"><img src="./img/salat.png" alt="Salat" width="394" height="397" /></li>
+            <li class="list"><img src="./img/borshch.png" alt="Borshch" width="395" height="397" /></li>
+          </ul>
+        </section>
+      </div>
+
       <!-- Customers Say -->
     </main>
   </body>
