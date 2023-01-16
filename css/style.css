@@ -1,20 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #2C2C2C;
     font-size: 16px;
     line-height: 1.5;
     background-color: #FEFEFE;
-
-
 }
-* {
-    box-sizing: border-box;
-}
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -22,6 +23,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .nav-list .link {
     text-decoration: none;
     color: #2C2C2C;
@@ -47,62 +49,99 @@ body {
     border-radius: 30px;
     background-color: #BBF330;
 }
+
 .slaider {
     width: 580px;
-    height: 580px;
-    
+    height: 580px; 
     border-radius: 290px;
     border: 26px solid #FFE550;  
 }
+
 .container .hero-title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 28px;
 
 }
 .hero-block {width: 502.42px;}
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    /* margin-bottom: 28px; */
+}
 
 .container {
     width: 1248px;
     margin-left: 16px;
-    margin-right: 16px;
-    
-    
+    margin-right: 16px;    
+}
+
+.section {
+    width: 1280px;
 }
 .list {
     list-style: none;
 }
-
+.paragraph {
+    margin-bottom: 40px;
+}
 
 .offerings {
-    /* background-image: url(../img/offerings-bg.png); */
-    display: flex;
-    justify-content:flex-start;
+    display: flex;  
+    justify-content: left;
+    outline: 1px solid red;
 }
+.bg-img {
+    background-image: url(../img/offerings-bg.png);
+    height: 824px;
+    width: 1280px;
+    position: relative;
+    /* How to calculate this size? */
+    top: -140px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 43px;
+    padding-left: 16px;
+    padding-right: 51px;
+    outline: 1px solid red;
+    margin-bottom: -140px; 
+}
+
 .offerings-content {
     margin-left: 90px;
     padding-top: 113px;
 }
+
 .title{
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .food-favorites {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    
-    padding-left: 0;   
+    flex-wrap: wrap;
+    /* gap: 32px; */
+    /* flex-flow: row wrap; */
+    justify-content: space-between;   
+    padding-left: 0;  
+    background-color: #BBF330; 
 }
-.food-favorites:first-child {
-   
-}
+
 .offerings-list {
     display: flex;
     justify-content: space-between;
-    padding-left: 0;}
+    padding-left: 0;
+    background-color: #BBF330;
+}
+.favorites {
+/* How to rise a section if previous one is raised with 
+position: relative and top: -140px */
+outline: 1px solid red;
+}
+
