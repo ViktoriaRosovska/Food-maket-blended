@@ -355,21 +355,35 @@ body {
 .subscribe-section {
     padding-top: 134px;
 
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 .subscribe-section .subscribe-form {
     display: flex;
-    outline: 1px solid red;
+    align-items: center;
 }
 
-.subscribe .form {
+.subscribe-section .form {
+    outline: 1px solid red;
     padding-top: 146px;
+    padding-bottom: 64px;
     width: 656px;
     height: 266px;
-    outline: 1px solid red;
 }
+
+
 
 
 
 /** ============================== /SUBSRIBE ============================== **/
+
+
+/** ============================== FOOTER ============================== **/
+.footer-section {
+    padding-top: 118px;
+}
+
+.footer-container {
+
+    background-image: url(./img/footer-bg.png);
+}
