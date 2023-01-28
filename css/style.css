@@ -385,7 +385,7 @@ body {
 
 .footer-container {
     height: 395px;
-    background-image: url(./img/footer-bg.png);
+    background-image: url("../img/footer-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
