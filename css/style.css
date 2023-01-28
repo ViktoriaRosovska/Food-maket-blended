@@ -1,13 +1,126 @@
-* {
-    box-sizing: border-box;
+:root {
+    --main-accent-color: #BBF330;
+    --main-clearance-color: #FFE550;
+    --nain-bg-color: #FEFEFE;
+    --main-font-style: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** ============================== COMPONENTS ============================== **/
+
+.container {
+    width: 1248px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+
+    /* outline: 1px solid blue; */
+}
+
+.section {
+    margin: 0 auto;
+    width: 1280px;
+    /* outline: 1px solid green; */
+
+}
+
+.list {
+    list-style: none;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+
+    border: 0.85px solid transparent;
+    border-radius: 30px;
+    background-color: var(--main-accent-color);
+}
+
+.btn.light-theme {
+    border: 2px solid #7EB101;
+    background-color: #FFFFFF;
+}
+
+/** ============================== /COMPONENTS ============================== **/
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font-style);
     color: #2C2C2C;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #FEFEFE;
+    background-color: var(--nain-bg-color);
+}
+
+/** ============================== HEADER ============================== **/
+
+.heder-section {
+
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.heder-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 1.14;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
 }
 
 .nav {
@@ -25,123 +138,238 @@ body {
 }
 
 .nav-list .link {
-    text-decoration: none;
     color: #2C2C2C;
 }
 
-.nav-list > .nav-item:not(:last-child) { margin-right: 28px;}
-
-.nav-list > .nav-item:last-child { margin-right: 30px;}
-
-.nav .current { color: #BBF330;}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
+.nav-list>.nav-item:not(:last-child) {
+    margin-right: 28px;
 }
 
-.btn {
-    padding: 6px, 18px;
-    min-width: 98px;
-    min-height: 32px;
-    border: 0.85px solid transparent;
-    border-radius: 30px;
-    background-color: #BBF330;
+.nav-list>.nav-item:last-child {
+    margin-right: 30px;
 }
 
-.slaider {
-    width: 580px;
-    height: 580px; 
-    border-radius: 290px;
-    border: 26px solid #FFE550;  
+.nav .current {
+    color: var(--main-accent-color);
 }
 
-.container .hero-title {
-    margin-top: 0;
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--main-accent-color);
+}
+
+/** ============================== /HEADER ============================== **/
+
+/** ============================== HERO ============================== **/
+
+
+.hero-title {
     margin-bottom: 28px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-block {
+    width: 502.42px;
 
 }
-.hero-block {width: 502.42px;}
 
-.hero {
+.hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hero-title {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    /* margin-bottom: 28px; */
+
+
+
+.hero-section {
+    padding-top: 159px;
+    position: relative;
 }
 
-.container {
-    width: 1248px;
-    margin-left: 16px;
-    margin-right: 16px;    
+.slaider {
+    position: absolute;
+    right: 16px;
+    width: 580px;
+    height: 580px;
+    border-radius: 290px;
+    border: 26px solid var(--main-clearance-color);
 }
 
-.section {
-    width: 1280px;
-}
-.list {
-    list-style: none;
-}
-.paragraph {
-    margin-bottom: 40px;
+/** ============================== /HERO ============================== **/
+
+/** ============================== OFFERINGS ============================== **/
+
+.offerings-section {
+    position: relative;
+    padding-top: 177px;
+
 }
 
-.offerings {
-    display: flex;  
+.offerings-container {
+
+    display: flex;
     justify-content: left;
-    outline: 1px solid red;
+
 }
+
 .bg-img {
+    position: absolute;
     background-image: url(../img/offerings-bg.png);
     height: 824px;
     width: 1280px;
-    position: relative;
-    /* How to calculate this size? */
-    top: -140px;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 43px;
-    padding-left: 16px;
-    padding-right: 51px;
-    outline: 1px solid red;
-    margin-bottom: -140px; 
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 .offerings-content {
+
     margin-left: 90px;
     padding-top: 113px;
+
 }
 
-.title{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.food-favorites {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 32px; */
-    /* flex-flow: row wrap; */
-    justify-content: space-between;   
-    padding-left: 0;  
-    background-color: #BBF330; 
+.offerings-content .section-title {
+    width: 526.17px;
+    margin-bottom: 20px;
 }
 
 .offerings-list {
     display: flex;
-    justify-content: space-between;
+
     padding-left: 0;
-    background-color: #BBF330;
-}
-.favorites {
-/* How to rise a section if previous one is raised with 
-position: relative and top: -140px */
-outline: 1px solid red;
+    margin-right: -67px;
 }
 
+.offerings-list .sub-title {
+    margin-bottom: 16px;
+}
+
+.offerings-list .list {
+
+    --items: 2;
+    --indent: 67px;
+    flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items));
+    margin-right: 67px;
+    text-align: left;
+
+}
+
+.offerings-list .list:last-child {
+    margin-right: 0;
+}
+
+.offerings-list .paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/** ============================== /OFFERINGS ============================== **/
+
+/** ============================== FAVORITES ============================== **/
+.food-favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+
+.icon-btn {
+    background-color: var(--nain-bg-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+}
+
+.favorites-section {
+    padding-top: 143px;
+    padding-bottom: 100px;
+}
+
+.favorites-section .section-title {
+    text-align: center;
+}
+
+.favorites-section .paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/** ============================== /FAVORITES ============================== **/
+
+/** ============================== CUSTOMERS ============================== **/
+.customers-section {
+    padding-top: 100px;
+    position: relative;
+}
+
+.customers-section .bg-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/bg-img-top.png);
+    /* outline: 1px solid red; */
+    height: 647px;
+    width: 1280px;
+    z-index: -1;
+}
+
+.customers-section .paragraph {
+    font-size: 16px;
+}
+
+.customers-list {
+    display: flex;
+    margin-right: -139px;
+
+
+}
+
+.customers-list .list {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 58px;
+    padding-bottom: 18px;
+    --items: 2;
+    --indent: 139px;
+    flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items));
+    margin-right: 139px;
+    text-align: left;
+    background-color: var(--nain-bg-color);
+    border-radius: 0px 30px 30px 30px;
+}
+
+/** ============================== /CUSTOMERS ============================== **/
+
+/** ============================== SUBSCRIBE ============================== **/
+
+.subscribe-section {
+    padding-top: 134px;
+
+    outline: 1px solid blue;
+}
+
+.subscribe-section .subscribe-form {
+    display: flex;
+    outline: 1px solid red;
+}
+
+.subscribe .form {
+    padding-top: 146px;
+    width: 656px;
+    height: 266px;
+    outline: 1px solid red;
+}
+
+
+
+/** ============================== /SUBSRIBE ============================== **/

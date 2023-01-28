@@ -11,13 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <heder>
-      <div class="container">
+    <header class="heder-section section">
+      <div class="heder-container container">
         <nav class="nav">
-          <a class="logo" href=""><img src="./img/logo.png" alt="logo" width="66" height="52" /></a>
+          <a class="logo" href="">
+            <svg width="66" height="52">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
           <div class="menu">
             <ul class="nav-list">
               <li class="nav-item"><a class="link current" href="">Home</a></li>
@@ -30,12 +35,12 @@
           </div>
         </nav>
       </div>
-    </heder>
+    </header>
 
     <main>
-      <!-- Hero -->
-      <div class="container">
-        <section class="hero">
+      <!-- Hero --> 
+      <section class="hero-section section">
+         <div class="hero-container container">
           <div class="hero-block">
             <h1 class="hero-title">Enjoy Your Favorite<br />Food From Anywhere</h1>
             <p class="paragraph">
@@ -49,41 +54,59 @@
           <div class="slaider">
             <!-- <img class="img1" src="./img/Subtract.png" alt="Outline falafel" width="580" height="580" /> -->
             <img class="img" src="./img/falafel.png" alt="Falafel" width="528" height="528" />
-          </div>
-        </section>
-      </div>
+          </div> 
+        </div>
+      </section>
+     
 
       <!-- Offerings -->
-      <div class="bg-img">
-        <div class="container">
-          <section class="offerings">
+          <section class="offerings-section section"> 
+            <div class=" offerings-container container">
             <img src="./img/aple.png" alt="Apple" width="550" height="604" />
             <div class="offerings-content">
-              <h2 class="title">What’s Special About Our Offerings</h2>
-              <p>
+              <h2 class="section-title">What’s Special About Our Offerings</h2>
+              <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                 tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
                 erat.
               </p>
               <ul class="offerings-list">
                 <li class="list">
-                  <h3 class="sub-title">Fasest Delivery</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                  <div class="offerings-item">
+                    <button class="icon-btn" type="button">
+                      <svg width="26.92" height="26.68">
+                        <use href="./img/icons.svg#icon-rocket"></use>
+                      </svg>
+                    </button>
+                    <h3 class="sub-title">Fasest Delivery</h3>
+                  <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                  </div>
+                  
                 </li>
                 <li class="list">
-                  <h3 class="sub-title">Easy To Order</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                  <div class="offerings-item">
+                    <button class="icon-btn" type="button">
+                      <svg width="21.25" height="28">
+                        <use href="./img/icons.svg#icon-finger"></use>
+                      </svg>
+                    </button>
+                   <h3 class="sub-title">Easy To Order</h3>
+                  <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+                 
                 </li>
               </ul>
-              <button class="btn" type="button">Order Now</button>
-            </div>
-          </section>
+              <button class="btn light-theme" type="button">Order Now</button>
+            </div></div>
+           <div class="bg-img">
         </div>
-      </div>
+      </section>
+      
       <!-- Favoriets -->
-      <div class="container">
-        <section class="favorites">
-          <h2 class="title">Some of Our Favorites</h2>
+      
+        <section class="favorites-section section">
+          <div class="container">
+          <h2 class="section-title">Some of Our Favorites</h2>
           <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
           <ul class="food-favorites">
@@ -94,10 +117,48 @@
             <li class="list"><img src="./img/salat.png" alt="Salat" width="394" height="397" /></li>
             <li class="list"><img src="./img/borshch.png" alt="Borshch" width="395" height="397" /></li>
           </ul>
-        </section>
+       
       </div>
-
+ </section>
       <!-- Customers Say -->
+      <section class="customers-section section">
+        <div class="container">
+          <h2 class="section-title">What our Customers Say</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <ul class="customers-list">
+            <li class="list">
+              <p>
+                “The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked”
+                <h3>Sumith Shah</h3>
+                <p>Some Dude</p>
+              </p>
+            </li>
+            <li class="list">
+              <p>
+                “The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”
+              </p>
+              <h3>Sumith Shah</h3>
+              <p>Some Dude</p>
+            </li>
+          </ul>
+        </div>
+          <div class="bg-img-top">
+
+          </div>
+      </section>
+      <section class="subscribe-section section">
+        <div class="container">
+          <div class="subscribe-form">
+            <div class="form">
+              <h2 class="section-title">Subscribe To Get Special Offers</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+          <img class="section-img" src="./img/banan.png" alt="" width="608"/>
+        </div>
+          </div>
+         
+
+      </section>
     </main>
   </body>
 </html>
