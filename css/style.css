@@ -57,10 +57,6 @@ a {
 
 }
 
-.list {
-    list-style: none;
-}
-
 .section-title {
     font-size: 42px;
     font-weight: 700;
@@ -306,7 +302,7 @@ body {
 
 /** ============================== /FAVORITES ============================== **/
 
-/** ============================== CUSTOMERS ============================== **/
+/** ============================== CUSTOMERS SAY ============================== **/
 .customers-section {
     padding-top: 100px;
     position: relative;
@@ -316,7 +312,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/bg-img-top.png);
+    background-image: url("../img/bg-img-top.png");
     /* outline: 1px solid red; */
     height: 647px;
     width: 1280px;
@@ -364,16 +360,11 @@ body {
 }
 
 .subscribe-section .form {
-    outline: 1px solid red;
     padding-top: 146px;
     padding-bottom: 64px;
     width: 656px;
     height: 266px;
 }
-
-
-
-
 
 /** ============================== /SUBSRIBE ============================== **/
 
